@@ -1,0 +1,36 @@
+<script type=text/javascript>
+    setTimeout(function(){
+        window.location.reload(1);
+    }, 60000);
+</script>
+
+<!doctype html>
+<html>
+<head>
+    <title>Hello from Flask</title>
+</head>
+<body>
+<h1>Smart Home</h1>
+<br />
+<br />
+<script language = "javascript" >
+
+    var data = {{ info | tojson }};
+    var JSONObject = JSON.parse(data);
+
+    document.write("<h4>Kitchen = " + JSONObject.kitchen_status + "</h4>");
+    document.write("<h4>Corner = " + JSONObject.corner_status+"</h4>");
+    document.write("<h4>Sunlight = " + JSONObject.sunlight_status+"</h4>");
+    document.write("<h4>Door = " + JSONObject.door_status+"</h4>");
+
+</script>
+
+
+<form action="/light/on" method="POST">
+    <input type="submit" value="Turn Light On">
+</form>
+<form action="/light/off" method="POST">
+    <input type="submit" value="Turn Light Off">
+</form>
+</body>
+</html>

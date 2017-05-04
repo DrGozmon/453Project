@@ -1,0 +1,27 @@
+Kitchen
+
+With kitchen light on during day: 0.17-0.19
+With kitchen light off during day: 0.083-0.091
+With kitchen light on during night: 0.151-0.174
+With kitchen light off during night: 0.0-0.004
+
+Net change = .151 - .17
+
+
+Sunlight
+
+With kitchen light on during day: 0.235-0.239
+With kitchen light off during day: 0.230-0.235
+With kitchen light on at night:0.027-0.311
+With kitchen light off at night: 0.0-0.002
+
+
+
+Corner
+
+Daytime light off: 0.055-0.075
+Daytime light on: 0.165-0.167
+Nightime light off: 0.00207-0.00209
+Nightime light on: 0.151-0.157
+
+Net change = .14893 - .15491
